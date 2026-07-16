@@ -77,7 +77,7 @@ if st.session_state.analysis_done:
     prediction, model, cm, cr, accuracy  = modelTraining(df, last_row)
     c1, c2 = st.columns([1,1])
     with c1:
-        st.markdown("<h3 style='margin-top: 120px; display: flex; justify-content: center;'>COMPANY INFORMATION</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='display: flex; justify-content: center;'>COMPANY INFORMATION</h3>", unsafe_allow_html=True)
 
     with c2:
         with st.spinner("Fetching company's information"):
