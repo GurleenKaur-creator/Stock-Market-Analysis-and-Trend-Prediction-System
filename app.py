@@ -21,7 +21,7 @@ st.markdown("<h1 style = 'text-align: center; margin-bottom: 30px'>Stock Market 
 st.markdown("<h6 style = 'font-size: 20px; text-align: center; margin-bottom:80px;'>Transforming Market Data into Meaningful Insights<br>The Stock Market Analysis & Trend Prediction System is an intelligent analytics platform that combines real-time financial data, advanced technical indicators, interactive visualizations, and machine learning to deliver comprehensive stock market insights. Designed for students, researchers, and investors alike, the platform enables users to explore historical trends, evaluate market behavior, and make data-driven predictions through a seamless and interactive experience</h6>", 
     unsafe_allow_html=True)
     
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title = "Stock Market Analysis and Trend Prediction")
 h1, h2 = st.columns([1, 3])
 
 with h1:
