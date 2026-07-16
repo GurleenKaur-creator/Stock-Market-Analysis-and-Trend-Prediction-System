@@ -1,4 +1,4 @@
-# Stock Market Analysis and Trend Prediction
+#Stock Market Analysis and Trend Prediction
 
 A Machine Learning-based application that analyzes historical stock market data,
 visualizes market trends through interactive charts, and predicts 
@@ -6,7 +6,7 @@ the **next trading day's stock movement** using a **Random Forest Classifier**.
 
 Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 
-# Features
+#Features
 
 -Interactive Candlestick Chart
 -Moving Average Analysis
@@ -20,7 +20,7 @@ Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 -Input Validation & Error Handling
 -Interactive Streamlit Dashboard
 
-# Technologies Used
+#Technologies Used
 
  Language: Python 
  Web Framework: Streamlit
@@ -30,7 +30,7 @@ Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
  Visualization: Plotly
  Technical Indicators: TA Library
 
-# Project Structure
+#Project Structure
 
 Stock-Market-Analysis/
 │
@@ -42,7 +42,7 @@ Stock-Market-Analysis/
 ├── requirements.txt       # Project Dependencies
 └── README.md
 
-# Machine Learning Workflow
+#Machine Learning Workflow
 
 1. Download historical stock data using Yahoo Finance.
 2. Clean and preprocess the dataset.
@@ -52,7 +52,7 @@ Stock-Market-Analysis/
 6. Predict the next trading day's market direction.
 7. Display interactive visualizations and prediction results.
 
-# Features used
+#Features used
 
 -Price-Based Features
     Open Price
@@ -92,9 +92,10 @@ Stock-Market-Analysis/
     Previous 5-Day Closing Price (Close_5)
     Previous Day Trading Volume (Volume_1)
 
-# Model Evaluation
+#Model Evaluation
 
 The model is evaluated using:
+
 - Accuracy Score
 - Confusion Matrix
 - Classification Report
@@ -102,29 +103,44 @@ The model is evaluated using:
 - Recall
 - F1-Score
 
-# Installation
+---
 
-# Clone the repository
+#Installation
 
+## Clone the repository
+
+```bash
 git clone https://github.com/GurleenKaur-creator/Stock-Market-Analysis-and-Trend-Prediction-System.git
+```
 
-# Navigate to the project folder
+## Navigate to the project folder
 
+```bash
 cd Stock-Market-Analysis-and-Trend-Prediction-System
 
-# Install the required libraries
+```
 
+## Install the required libraries
+
+```bash
 pip install -r requirements.txt
+```
 
-# Running the Project
+---
 
-# Streamlit Web Application
+#Running the Project
 
+## Streamlit Web Application
+
+```bash
 streamlit run app.py OR python -m streamlit run app.py
+```
 
-# Terminal-Based Application
+## Terminal-Based Application
 
+```bash
 python main.py
+```
 
 # ⚠️ Disclaimer
 
@@ -134,7 +150,7 @@ Stock market predictions are generated using historical market data and machine 
 
 ---
 
-# Author
+# 👩‍💻 Author
 
 **Gurleen Kaur**
 
@@ -144,4 +160,4 @@ Final Year Project • 2026
 
 ---
 
-## If you found this project useful, consider giving it a star on GitHub!
+## ⭐ If you found this project useful, consider giving it a star on GitHub!
