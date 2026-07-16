@@ -4,7 +4,7 @@ A Machine Learning-based application that analyzes historical stock market data,
 
 Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 
-#Features
+## Features
 
 - 📊 Interactive Candlestick Chart
 - 📈 Moving Average Analysis (5, 20, 50, 100 & 200 Days)
@@ -21,7 +21,7 @@ Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 
 ---
 
-#Technologies Used
+## Technologies Used
 
 | Category | Technology |
 |----------|------------|
@@ -35,7 +35,7 @@ Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 
 ---
 
-#Project Structure
+## Project Structure
 
 ```text
 Stock-Market-Analysis/
@@ -51,7 +51,7 @@ Stock-Market-Analysis/
 
 ---
 
-#Machine Learning Workflow
+## Machine Learning Workflow
 
 1. Download historical stock data using Yahoo Finance.
 2. Clean and preprocess the dataset.
@@ -63,21 +63,48 @@ Stock-Market-Analysis/
 
 ---
 
-#Technical Indicators Used
+## Technical Indicators Used
 
-- Simple Moving Averages (5, 20, 50, 100 & 200)
-- Relative Strength Index (RSI)
-- MACD
-- MACD Signal Line
-- MACD Histogram
-- Bollinger Bands
-- Daily Percentage Return
-- Rolling Volatility
-- Previous Closing Price (Lag Features)
-
+- Price-Based Features
+    Open Price
+    High Price
+    Low Price
+    Close Price
+    Trading Volume
+- Daily Price Movement
+    - Percentage Change (P_Change)
+    - Daily Trading Range (D_Range)
+    - Daily Return (D_Return)
+    - High-Low Percentage (HL_%)
+    - Open-Close Percentage (OC_%)
+- Return-Based Features
+    - 5-Day Return (5d_Return)
+    - 10-Day Return (10d_Return)
+    - Rolling Volatility
+- Moving Averages
+    - 20-Day Moving Average (MA_20)
+    - 50-Day Moving Average (MA_50)
+    - 100-Day Moving Average (MA_100)
+- Momentum Indicators
+    - Relative Strength Index (RSI)
+    - Exponential Moving Average (EMA 12)
+    - Exponential Moving Average (EMA 26)
+    - MACD
+    - MACD Signal Line
+    - MACD Histogram
+- Bollinger Band Features
+    - Upper Bollinger Band
+    - Lower Bollinger Band
+    - Bollinger Band Width
+- Lag Features
+    - Previous Day Closing Price (Close_1)
+    - Previous 2-Day Closing Price (Close_2)
+    - Previous 3-Day Closing Price (Close_3)
+    - Previous 5-Day Closing Price (Close_5)
+    - Previous Day Trading Volume (Volume_1)
 ---
 
-#Model Evaluation
+## Model Evaluation
 
 The model is evaluated using:
 
@@ -90,18 +117,18 @@ The model is evaluated using:
 
 ---
 
-#Installation
+# Installation
 
 ## Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/GurleenKaur-creator/Stock-Market-Analysis-and-Trend-Prediction-System.git
 ```
 
 ## Navigate to the project folder
 
 ```bash
-cd YOUR_REPOSITORY
+cd Stock-Market-Analysis-and-Trend-Prediction-System
 ```
 
 ## Install the required libraries
@@ -112,7 +139,7 @@ pip install -r requirements.txt
 
 ---
 
-#Running the Project
+## Running the Project
 
 ## Streamlit Web Application
 
