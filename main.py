@@ -33,7 +33,12 @@ else:
 
 df = cleanData(df)
 df, last_row  = newFeatures(df)
-prediction, cm, cr, accuracy = modelTraining(df, last_row)
+result = modelTraining(df, last_row)
+print(result)
+print(type(result))
+print(len(result))
+
+prediction, cm, cr, accuracy = result
 
 #print(f"All columns are:  \n{df.columns.to_list()}")
 

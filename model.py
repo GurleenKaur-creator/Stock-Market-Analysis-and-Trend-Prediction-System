@@ -37,8 +37,8 @@ def modelTraining(df, last_row):
     #model = RandomForestClassifier(n_estimators= 500, min_samples_leaf=5, max_features="sqrt",  class_weight="balanced", max_depth=15, random_state= 42)
     
     search.fit(x_train, y_train)
-    bParams = search.best_params_
-    bScore = search.best_score_
+    # bParams = search.best_params_
+    # bScore = search.best_score_
     bModel = search.best_estimator_
     y_predict = bModel.predict(x_test)
 

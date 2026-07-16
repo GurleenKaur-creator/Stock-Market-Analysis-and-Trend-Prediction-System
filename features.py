@@ -4,9 +4,6 @@ import ta
 
 def newFeatures(df):
 
-    #Removing unused columns
-    #df = df.drop(columns = [ "Dividends", "Stock Splits"])
-
     #Daily's Price Change
     df["P_Change"] = df["Close"]-df["Open"]
 
