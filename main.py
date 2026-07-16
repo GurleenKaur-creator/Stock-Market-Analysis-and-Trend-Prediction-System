@@ -33,15 +33,10 @@ else:
 
 df = cleanData(df)
 df, last_row  = newFeatures(df)
-prediction, model, cm, cr, accuracy = modelTraining(df, last_row)
-print(f"All columns are:  \n{df.columns.to_list()}")
-# print(df["Target"].value_counts(normalize=True) * 100)
-# print(cm)
-# print(cr)
-# print(prob.min())
-# print(prob.max())
-# print(prob.mean())
-# print(ut_values, up_values)
+prediction, cm, cr, accuracy = modelTraining(df, last_row)
+
+#print(f"All columns are:  \n{df.columns.to_list()}")
+
 if prediction:
     print("Tomorrow's stock price is expected to rise")
 else:
