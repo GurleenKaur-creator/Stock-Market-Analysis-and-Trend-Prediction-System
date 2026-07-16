@@ -1,37 +1,43 @@
-#Stock Market Analysis and Trend Prediction
+# 📈 Stock Market Analysis and Trend Prediction
 
-A Machine Learning-based application that analyzes historical stock market data,
-visualizes market trends through interactive charts, and predicts 
-the **next trading day's stock movement** using a **Random Forest Classifier**.
+A Machine Learning-based application that analyzes historical stock market data, visualizes market trends through interactive charts, and predicts the **next trading day's stock movement** using a **Random Forest Classifier**.
 
 Developed as a **Bachelor of Computer Applications (BCA) Final Year Project**.
 
 #Features
 
--Interactive Candlestick Chart
--Moving Average Analysis
--MACD Indicator
--Bollinger Bands
--Daily Return Visualization
--Rolling Volatility Analysis
--Company Information Retrieval
--Next-Day Stock Trend Prediction
--Confusion Matrix
--Input Validation & Error Handling
--Interactive Streamlit Dashboard
+- 📊 Interactive Candlestick Chart
+- 📈 Moving Average Analysis (5, 20, 50, 100 & 200 Days)
+- 📉 MACD Indicator
+- 📌 Bollinger Bands
+- 📊 Daily Return Visualization
+- 📈 Rolling Volatility Analysis
+- 🏢 Company Information Retrieval
+- 🤖 Next-Day Stock Trend Prediction
+- 📋 Confusion Matrix
+- 📄 Classification Report
+- ⚡ Input Validation & Error Handling
+- 🎨 Interactive Streamlit Dashboard
+
+---
 
 #Technologies Used
 
- Language: Python 
- Web Framework: Streamlit
- Data Analysis: Pandas, NumPy 
- Machine Learning: Scikit-learn
- Data Source: Yahoo Finance (yfinance)
- Visualization: Plotly
- Technical Indicators: TA Library
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| Web Framework | Streamlit |
+| Data Analysis | Pandas, NumPy |
+| Machine Learning | Scikit-learn |
+| Data Source | Yahoo Finance (yfinance) |
+| Visualization | Plotly |
+| Technical Indicators | TA Library |
+
+---
 
 #Project Structure
 
+```text
 Stock-Market-Analysis/
 │
 ├── app.py                 # Streamlit Web Application
@@ -41,6 +47,9 @@ Stock-Market-Analysis/
 ├── model.py               # Machine Learning Model
 ├── requirements.txt       # Project Dependencies
 └── README.md
+```
+
+---
 
 #Machine Learning Workflow
 
@@ -52,45 +61,21 @@ Stock-Market-Analysis/
 6. Predict the next trading day's market direction.
 7. Display interactive visualizations and prediction results.
 
-#Features used
+---
 
--Price-Based Features
-    Open Price
-    High Price
-    Low Price
-    Close Price
-    Trading Volume
--Daily Price Movement
-    Percentage Change (P_Change)
-    Daily Trading Range (D_Range)
-    Daily Return (D_Return)
-    High-Low Percentage (HL_%)
-    Open-Close Percentage (OC_%)
--Return-Based Features
-    5-Day Return (5d_Return)
-    10-Day Return (10d_Return)
-    Rolling Volatility
--Moving Averages
-    20-Day Moving Average (MA_20)
-    50-Day Moving Average (MA_50)
-    100-Day Moving Average (MA_100)
--Momentum Indicators
-    Relative Strength Index (RSI)
-    Exponential Moving Average (EMA 12)
-    Exponential Moving Average (EMA 26)
-    MACD
-    MACD Signal Line
-    MACD Histogram
--Bollinger Band Features
-    Upper Bollinger Band
-    Lower Bollinger Band
-    Bollinger Band Width
--Lag Features
-    Previous Day Closing Price (Close_1)
-    Previous 2-Day Closing Price (Close_2)
-    Previous 3-Day Closing Price (Close_3)
-    Previous 5-Day Closing Price (Close_5)
-    Previous Day Trading Volume (Volume_1)
+#Technical Indicators Used
+
+- Simple Moving Averages (5, 20, 50, 100 & 200)
+- Relative Strength Index (RSI)
+- MACD
+- MACD Signal Line
+- MACD Histogram
+- Bollinger Bands
+- Daily Percentage Return
+- Rolling Volatility
+- Previous Closing Price (Lag Features)
+
+---
 
 #Model Evaluation
 
@@ -110,14 +95,13 @@ The model is evaluated using:
 ## Clone the repository
 
 ```bash
-git clone https://github.com/GurleenKaur-creator/Stock-Market-Analysis-and-Trend-Prediction-System.git
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 ```
 
 ## Navigate to the project folder
 
 ```bash
-cd Stock-Market-Analysis-and-Trend-Prediction-System
-
+cd YOUR_REPOSITORY
 ```
 
 ## Install the required libraries
