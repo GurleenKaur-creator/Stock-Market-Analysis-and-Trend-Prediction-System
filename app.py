@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import yfinance as yf
+from yfinance.exceptions import YFRateLimitError
 from cleaning import cleanData 
 from features import newFeatures
 from model import modelTraining
@@ -80,19 +81,23 @@ if st.session_state.analysis_done:
 
     with c2:
         with st.spinner("Fetching company's information"):
-            start = time.time()
-            ticker = yf.Ticker(stock)
-            info = ticker.info
-            st.subheader(info.get("longName", "Unknown"))
-            st.write("Sector: ", info.get("sector", "None"))
-            st.write("Industry: ", info.get("industry", "None"))
-            st.write("Market Capitalization: ", info.get("marketCap", "None"))
-            st.write("Official Website: ", info.get("website", "None"))
-            st.write("Exchange: ", info.get("exchange", "None"))
-            st.write("Currency: ", info.get("currency", "None"))
-            end = time.time()-start
-            if end<2:
-                time.sleep(2-end)
+            
+            try:
+                ticker = yf.Ticker(stock)
+                info = ticker.info
+                st.subheader(info.get("longName", "Unknown"))
+                st.write("Sector: ", info.get("sector", "None"))
+                st.write("Industry: ", info.get("industry", "None"))
+                st.write("Market Capitalization: ", info.get("marketCap", "None"))
+                st.write("Official Website: ", info.get("website", "None"))
+                st.write("Exchange: ", info.get("exchange", "None"))
+                st.write("Currency: ", info.get("currency", "None"))
+            except YFRateLimitError:
+                st.info("Yahoo Finance is temporarily limiting company information requests. Please try again later.")
+            except Exception:
+                st.write("Company information is temporarily unavailable. Please try again later.")
+           
+    
     st.divider()
     st.subheader("Candle Sticks Analysis")
     cc_check = st.checkbox("Show Bollinger Bands")
