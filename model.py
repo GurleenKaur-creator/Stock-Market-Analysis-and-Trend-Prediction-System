@@ -47,9 +47,9 @@ def modelTraining(df, last_row):
 
     cm = confusion_matrix(y_test, y_predict)
 
-    cr = classification_report(y_test, y_predict)
+    #cr = classification_report(y_test, y_predict)
 
     prediction = bModel.predict(last_row)
 
-    return prediction, cm, cr, accuracy 
+    return prediction, cm, accuracy 
 

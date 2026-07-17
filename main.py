@@ -38,7 +38,7 @@ print(result)
 print(type(result))
 print(len(result))
 
-prediction, cm, cr, accuracy = result
+prediction, cm, accuracy = result
 
 #print(f"All columns are:  \n{df.columns.to_list()}")
 
