@@ -30,7 +30,7 @@ def modelTraining(df, last_row):
         cv = tscv,
         scoring = "accuracy",
         random_state = 42,
-        n_jobs = -1
+        # n_jobs = -1
     )
     
     search.fit(x_train, y_train)
