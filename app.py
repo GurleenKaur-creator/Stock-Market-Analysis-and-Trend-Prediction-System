@@ -69,12 +69,16 @@ if st.button("Predict"):
 if st.session_state.analysis_done:
     df = st.session_state.df
     stock = st.session_state.stock
+
     #Using the Cleaning Function
     df = cleanData(df)
+
     #Adding new features
     df, last_row = newFeatures(df)
+
     #Using the RFC model for prediction
     prediction, cm, accuracy  = modelTraining(df, last_row)
+    
     c1, c2 = st.columns([1,1])
     with c1:
         st.markdown("<h3 style='display: flex; justify-content: center;'>COMPANY INFORMATION</h3>", unsafe_allow_html=True)
@@ -163,7 +167,7 @@ if st.session_state.analysis_done:
     st.plotly_chart(bar)
 
     st.subheader("Stock Data of last 10 years")
-    st.write(df)
+    st.write(df[["Open", "High", "Low", "Close", "Volume"]])
 
     c1, c3 = st.columns([1,1])
     with c1:
@@ -304,5 +308,5 @@ if st.session_state.analysis_done:
     )
     st.caption(f"Last updated: {df.index[-1].date()}")
     st.divider()
-    st.markdown("Developed by Gurleen Kaur<br>BCA Final Year Project<br>2026", unsafe_allow_html=True)
+    st.markdown("Developed by: Gurleen Kaur<br> Co-Developer: Yasmeen Khan<br> BCA Final Year Project<br>2026", unsafe_allow_html=True)
     st.divider()

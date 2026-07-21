@@ -11,7 +11,7 @@ def newFeatures(df):
     df["D_Range"] = df["High"]-df["Low"]
 
     #Daily Return, 5 and 10 day return
-    df["D_Return"] = df["Close"].pct_change()
+    df["D_Return"] = df["Close"].pct_change(1)
     df["5d_Return"] = df["Close"].pct_change(5)
     df["10d_Return"] = df["Close"].pct_change(10)
 

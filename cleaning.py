@@ -14,7 +14,7 @@ def cleanData(df):
     #Removing Impossible values
     for col in df[cols]:
         df.loc[df[col]<=0, col] = np.nan
-        df.loc[df[col]>=df[col].mean()*5] = np.nan
+        df.loc[df[col]>=df[col].mean()*5, col] = np.nan
 
     #Finding and fixing missing values
     vals = df[cols].isnull().sum().sum()

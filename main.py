@@ -29,18 +29,10 @@ elif (len(df)<100):
 else:
     print("..........PROCEEDING..........")
 
-# print(df.head())
-
 df = cleanData(df)
 df, last_row  = newFeatures(df)
 
-# print(result)
-# print(type(result))
-# print(len(result))
-
 prediction, cm, accuracy = modelTraining(df, last_row)
-
-#print(f"All columns are:  \n{df.columns.to_list()}")
 
 if prediction:
     print("Tomorrow's stock price is expected to rise")
